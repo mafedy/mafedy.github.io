@@ -1,21 +1,31 @@
-body {
-  font-family: "Source Sans Pro", Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.75;
+.timeline{
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-top: 20px solid white;
+  border-bottom: 20px solid white;
+  background: white;
 }
+
+
 #timeline {
   display: flex;
   background-color: #031625;
+  width: 75%;
+  margin: auto;
 }
+
 #timeline:hover .tl-item {
-  width: 23.3333%;
+  width: 40%;
+
 }
 .tl-item {
   transform: translate3d(0, 0, 0);
   position: relative;
   width: 50%;
-  height: 130px;
-  min-height: 600px;
+  height: 100px;
+  min-height: 300px;
+  min-width: 300px;
   color: #fff;
   overflow: hidden;
   transition: width 0.5s ease;
@@ -31,18 +41,19 @@ body {
 }
 .tl-item:after {
   background: rgba(3, 22, 37, 0.85);
+   
   opacity: 1;
   transition: opacity 0.5s ease;
 }
 .tl-item:before {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 75%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0, black 90%);
   z-index: 1;
   opacity: 0;
   transform: translate3d(0, 0, 0) translateY(50%);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 .tl-item:hover {
-  width: 30% !important;
+  width: 60% !important;
 }
 .tl-item:hover:after {
   opacity: 0;
@@ -60,6 +71,12 @@ body {
 .tl-item:hover .tl-bg {
   filter: grayscale(0);
 }
+
+.tl-item:hover .tl-title {
+  transform: translateX(-50%) translateY(-120%);
+  transition: transform 0.75s ease 0.5s;
+}
+
 .tl-content {
   transform: translate3d(0, 0, 0) translateY(25px);
   position: relative;
@@ -76,16 +93,17 @@ body {
   font-size: 1.44rem;
   font-weight: normal;
 }
-.tl-year {
+.tl-title {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   z-index: 1;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  text-transform: uppercase;
 }
-.tl-year p {
+.tl-title p {
   font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 1.728rem;
   line-height: 0;
@@ -175,7 +193,7 @@ section#timeline article div.inner span.date span.day {
 section#timeline article div.inner span.date span.month {
   font-size: 18px;
 }
-section#timeline article div.inner span.date span.year {
+section#timeline article div.inner span.date span.title {
   font-size: 10px;
 }
 section#timeline article div.inner h2 {

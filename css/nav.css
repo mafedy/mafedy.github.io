@@ -2,6 +2,7 @@ nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  text-transform: uppercase;
 }
 
 #menuToggle
@@ -9,7 +10,7 @@ nav {
   display: block;
   position: relative;
 
-  left: 50px;
+  padding-left: 50px;
   top: 50px;
   z-index: 1;
   
@@ -41,6 +42,7 @@ nav {
   left: -5px;
   
   cursor: pointer;
+  margin-left:50px;
   
   opacity: 0; /* hide this */
   z-index: 2; /* and place it over the hamburger */
@@ -134,7 +136,7 @@ nav {
 
 #menu li
 {
-  padding: 10px 0;
+  padding: 20px 0;
   font-size: 22px;
 }
 
