@@ -70,15 +70,31 @@ a:hover::after {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1115px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
   }
+
+    .blurred{
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  }
+
+  .aboutMeZone{
+    flex-direction: column;
+    left: 50%;
+    align-items: center;
+  }
+
+  .aboutMePhoto{
+    padding-bottom: 20px;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1115px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -136,13 +152,15 @@ a:hover::after {
 
 /*ABOUT ME*/
 .aboutMe{
-	height:100%; 
+	height: 100%; 
 	width:100%; 
-	text-align: center;
 }
 
 .aboutMeZone{
-	height: 200px;
+	height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
 }
 
 .SectionTitle {
@@ -150,22 +168,15 @@ a:hover::after {
 	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
   font-size: 35px;
-}
-
-.aboutMeBlank {
-	float: left;
-	width: 2%;
-	height: 100%;
+    text-align: center;
 }
 
 .aboutMePhoto {
-	float: left;
     width: 30%;
 }
  
 .aboutMeInfos {
- float: left;
-  width: 61%;
+  width: 70%;
   height: 100%;
 }
 
@@ -243,6 +254,8 @@ a:hover::after {
   width: 20%;
   border-radius: 15px;
 }
+
+
 
 /*@-webkit-keyframes arrowInOut {
 	0%,100% {opacity: 0;}

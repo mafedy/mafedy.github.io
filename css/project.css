@@ -1,4 +1,4 @@
-/*body {
+body {
   font-family: "Source Sans Pro", Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.75;
@@ -13,7 +13,7 @@
 .tl-item {
   transform: translate3d(0, 0, 0);
   position: relative;
-  width: 25%;
+  width: 50%;
   height: 130px;
   min-height: 600px;
   color: #fff;
@@ -101,7 +101,7 @@
   background-position: center center;
   transition: filter 0.5s ease;
   filter: grayscale(100%);
-}*/
+}
 
 
 
@@ -247,6 +247,9 @@ section#timeline article:nth-child(5) div.inner h2:after {
 
 
 
+
+
+/*
 @import "https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700";
 header:after, #timeline .timeline-item:after, header:before, #timeline .timeline-item:before {
   content: '';
@@ -469,3 +472,4 @@ header .social .btn {
     left: 0;
   }
 }
+*/
