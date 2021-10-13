@@ -59,15 +59,15 @@
             </div>
 
             <div class="aboutMe">
-                <p class="SectionTitle">À propos de moi</p>
+                <p class="aboutMeTitle">À propos de moi</p>
                 <br><br>
                 <div class="aboutMeZone">
-                    <div class="aboutMePhoto"><img src="img/Photo.jpg" alt="Martin POT" class="imgcv"></div>
+                    <!-- <div class="aboutMePhoto"><img src="img/Photo.jpg" alt="Martin POT" class="imgcv"></div> -->
                     <div class="aboutMeInfos"><p class="aboutMeInfosText">Je suis actuellement étudiant en 2ème année d'école d'ingénieurs à l'ISEN (Institut Supérieur de l'Électronique et du Numérique) dans la spécialisation Systèmes Embarqués à Brest. Je m'identifie comme une personnes dynamique, patiente et persévérante avec une envie grandissante de développer ses connaissances. Une facilité de communication et un relationnel aisé me permettent de m'adapter facilement au travail en équipe.</p></div>
                 </div>
                  <div class="aboutMeIsen"><img src="img/isen.jpg"></div>
             </div>
-            <br><br><br id="contact">
+            <br><br><br>
 
 
             <div class="timeline">
@@ -81,7 +81,7 @@
 
                         <div class="tl-content">
                           <h1>Mon Curriculum Vitae</h1>
-                          <p>Cliquez pour le découvrir</p>
+                          <a href="cv.html" style="color:white"><p>Cliquez pour le découvrir</p></a>
                         </div>
                     </div>
 
@@ -94,15 +94,12 @@
 
                         <div class="tl-content">
                           <h1>Mes différents projets</h1>
-                          <p>Cliquez pour en savoir plus</p>
+                           <a href="project.html" style="color:white"><p>Cliquez pour en savoir plus</p></a>
                         </div>
                     </div>
                 </section>
             </div>
-
-
-
-
+            <br><br><br><br id="contact">
 
 
 
@@ -110,19 +107,37 @@
 
 
             <div class="contact">
-                <p class="SectionTitle">Contact</p>
+                <div style="text-align: center;"><p class="contactTitle">Contact</p></div>
                 <br><br>
-                <div class="contactZone">
-                    <div class="contactBlank"></div>
-                    <div class="contactMail"><p>martin.pot.isen-brest@outlook.fr</p></div>
-                    <div class="contactBlank"></div>
-                    <div class="contactPhone"><p>06.77.44.74.47</p></div>
-                    <div class="contactBlank"></div>
-                    <div class="contactLinkedIn"><a href='https://www.linkedin.com/in/pot-martin'><img src='https://www.unitag.io/qreator/generate?crs=Ppv8rOENN3V1lAwTz82zPjZwLeh11CXT8n%252BHMzWMdvUb%252BsqQ%252Foeme7xO4uqEGrEiWXSFsLOZjD0p0af8Oe4JUujrLgxVVfT89%252BGD2g4vFdKZQuP4Fdgab3F2t1Q5SyqVAKxBAM%252Fu7kV9E28Zhu5m8Uk6%252B%252FTe0LUTdqPNGCzpps7JW1xbuyL4%252FEnsJXZL6otJORTmsRxJws8FLFIZXWcsgTC7BvWGvmZ%252F30YYTtj%252FjCveV2QVtvzvXOAdCIFgsYLUoA7RS5MTUMLs9em8vjsfh0%252B5k%252FncPYmy3ryhdgAOmSfZiL4NpGSb8%252FgS%252BibGrZls07w%252B%252FPIbc9nUBFcYlKUxzg%253D%253D&crd=fhOysE0g3Bah%252BuqXA7NPQ87MoHrnzb%252BauJLKoOEbJspy%252FJNDy7HBpQQhB3zGfnUZLHn0S6AQ0C3m0nilipWjtg%253D%253D' alt='QR Code'/></a></div>
-                    <div class="contactBlank"></div>
-                </div> 
+                <section id="contact">
+
+                    <div class="contactItem">
+                        <div class="contact-content">
+                          <h1><img src="img/mail.png" class="mail"></h1>
+                          <p>martin.pot.isen-brest@outlook.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contactItem">
+                        <div class="contact-content">
+                          <h1><img src="img/phone.png" class="phone"></h1>
+                          <p>06.77.44.74.47</p>
+                        </div>
+                    </div>
+
+                    <div class="contactItem">
+                        <div class="contact-content">
+                          <h1><img src="img/linkedin.png" class="linkedin"></h1>
+                          <a href='https://www.linkedin.com/in/pot-martin'><img src='https://www.unitag.io/qreator/generate?crs=Ppv8rOENN3V1lAwTz82zPjZwLeh11CXT8n%252BHMzWMdvUb%252BsqQ%252Foeme7xO4uqEGrEiWXSFsLOZjD0p0af8Oe4JUujrLgxVVfT89%252BGD2g4vFdKZQuP4Fdgab3F2t1Q5SyqVAKxBAM%252Fu7kV9E28Zhu5m8Uk6%252B%252FTe0LUTdqPNGCzpps7JW1xbuyL4%252FEnsJXZL6otJORTmsRxJws8FLFIZXWcsgTC7BvWGvmZ%252F30YYTtj%252FjCveV2QVtvzvXOAdCIFgsYLUoA7RS5MTUMLs9em8vjsfh0%252B5k%252FncPYmy3ryhdgAOmSfZiL4NpGSb8%252FgS%252BibGrZls07w%252B%252FPIbc9nUBFcYlKUxzg%253D%253D&crd=fhOysE0g3Bah%252BuqXA7NPQ87MoHrnzb%252BauJLKoOEbJspy%252FJNDy7HBpQQhB3zGfnUZLHn0S6AQ0C3m0nilipWjtg%253D%253D' alt='QR Code' class="QRCODE"/>
+                        </div>
+                    </div>
             </div>
 
+        <br><br><br><br>
         </div>
     </div>
 </body>
+
+
+
+<!-- <a href='https://www.linkedin.com/in/pot-martin'><img src='https://www.unitag.io/qreator/generate?crs=Ppv8rOENN3V1lAwTz82zPjZwLeh11CXT8n%252BHMzWMdvUb%252BsqQ%252Foeme7xO4uqEGrEiWXSFsLOZjD0p0af8Oe4JUujrLgxVVfT89%252BGD2g4vFdKZQuP4Fdgab3F2t1Q5SyqVAKxBAM%252Fu7kV9E28Zhu5m8Uk6%252B%252FTe0LUTdqPNGCzpps7JW1xbuyL4%252FEnsJXZL6otJORTmsRxJws8FLFIZXWcsgTC7BvWGvmZ%252F30YYTtj%252FjCveV2QVtvzvXOAdCIFgsYLUoA7RS5MTUMLs9em8vjsfh0%252B5k%252FncPYmy3ryhdgAOmSfZiL4NpGSb8%252FgS%252BibGrZls07w%252B%252FPIbc9nUBFcYlKUxzg%253D%253D&crd=fhOysE0g3Bah%252BuqXA7NPQ87MoHrnzb%252BauJLKoOEbJspy%252FJNDy7HBpQQhB3zGfnUZLHn0S6AQ0C3m0nilipWjtg%253D%253D' alt='QR Code'/></a> -->

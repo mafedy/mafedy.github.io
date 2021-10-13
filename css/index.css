@@ -12,6 +12,7 @@ html, body{
   backdrop-filter: blur(10px);
   }
 
+
   .aboutMeZone{
     flex-direction: column;
     left: 50%;
@@ -79,12 +80,16 @@ html, body{
   padding: 0 50px;
 }
 
-.SectionTitle {
+.aboutMeTitle{
 	color: white;
-	font-family: 'Lato', sans-serif;
+  margin: auto;
+  width: 400px;
 	text-transform: uppercase;
   font-size: 35px;
-    text-align: center;
+  text-align: center;
+  border:  3px solid white;
+   border-radius: 10px 0 10px 0;
+}
 }
 
 .aboutMePhoto {
@@ -103,7 +108,7 @@ html, body{
   text-align: justify;
   line-height: 1.7;
   background: rgba(255, 255, 255, 0.8);
-  border-radius: 15px;
+  border-radius: 10px 0 10px 0;
 }
 
 .aboutMeIsen {
@@ -119,57 +124,104 @@ html, body{
 
 
 /*CONTACT*/
-.contact{
-  height:6000px; 
-  width:100%; 
-  text-align: center;
+
+@media screen and (max-width:  760px){
+  #contact{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .contactItem{
+    margin-bottom: 50px;
+  }
 }
 
-.contactZone{
-  height: 50px;
+.contact{
+  width:100%;
+  height: 100%;
 }
 
 .contactTitle {
   color: white;
-  font-family: 'Lato', sans-serif;
+  margin: auto;
+  width: 250px;
   text-transform: uppercase;
   font-size: 35px;
-  border-bottom: 3px white;
-  border-top: 3px white;
+  text-align: center;
+  border:  3px solid white;
+  border-radius: 10px 10px 10px 0;
 }
 
-.contactBlank {
-  float: left;
-  width: 3.3%;
-  height: 100%;
+#contact {
+  display: flex;
+  background-color: none;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 20px;
+
 }
 
-.contactMail {
-  float: left;
-    width: 30%;
-    height: 100%;
-    color: white;
-    font-size: 22px;
-}
- 
-.contactPhone {
- float: left;
-  width: 30%;
-  height: 100%;
-  color: white;
-  font-size: 22px;
+.contactItem{
+  height: 250px;
+  width: 25%;
+  /*background: white;*/
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0, white 90%);
+  color: black;
+  margin: 0 50px;
+  padding: 0 0px;
+
+  /*border-radius: 15px;*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+
+  /*Transitions pour tout navigateur*/
+  transition:  transform 0.5s ease;
+  -webkit-transition:  transform 0.5s ease;
+  -moz-transition:  transform 0.5s ease;
+  -ms-transition:  transform 0.5s ease;
+
 }
 
-.contactLinkedIn {
- float: left;
-  width: 30%;
-  height: 100%;
-}
-
-.contactLinkedIn img{
+.mail{
   width: 20%;
-  border-radius: 15px;
+  height: 20%;
 }
+
+.phone{
+  width: 14%;
+  height: 14%;
+}
+
+.linkedin{
+  width: 35%;
+  height: 35%;
+}
+
+.QRCODE{
+  width: 30%;
+  height: 30%;
+}
+
+.contactItem .contact-content{
+  text-align: center;
+  font-family: "Lucida Console", Courier, monospace;
+  padding-top: 20px;
+}
+
+.contactItem .contact-content p{
+  padding-top: 50px;
+  font-size: 20px;
+}
+
+.contactItem:hover{
+  transform:  scale(1.10);
+  -moz-transform:  scale(1.10);
+  -ms-transform:  scale(1.10);
+  -webkit-transform:  scale(1.10);
+  
+  background: white;
+}
+
+
 
 
 
