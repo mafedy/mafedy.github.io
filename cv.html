@@ -6,6 +6,9 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width"/>
 	<link rel="stylesheet" href="css/cv.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/cv-timeline.css">
+    <link rel="stylesheet" href="css/cv-compétences.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/index.js"></script>
 </head>
@@ -13,17 +16,201 @@
 <body>
     <div class="parallax">
         <div class="blurred">
-            <div class="topnav" id="myTopnav">
-              <a href="index.html" class="aHome">Accueil</a>
-              <a href="#contact" class="aOthers">Contact</a>
-              <a href="#projects" class="aOthers">Projets</a>
-              <a href="#cv" class="active">CV</a>
-              <a href="#about" class="aAbout">À propos de moi</a>
-            </div>
+            <nav role="navigation">
+              <div id="menuToggle">
+                <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+                <input type="checkbox" />
+                
+                <span></span>
+                <span></span>
+                <span></span>
 
-            
+                <ul id="menu">
+                  <a href="index.html"><li>Accueil</li></a>
+                  <a href="#about"><li>À propos de moi</li></a>
+                  <a href="cv.html"><li>CV</li></a>
+                  <a href="project.html"><li>Projets</li></a>
+                  <a href="#contact"><li>Contact</li></a>
+                  <a href="#"><li><button>FR / EN</button></li></a>
+                </ul>
+              </div>
+            </nav>
+
+            <div> <!-- Debut timeline -->
+                <span class="section-title-timeline"><h2>FORMATION</h2></span>
+                <section id="timeline">
+                  <article>
+                    <div class="inner">
+                      <span class="date">
+                        <span class="day">2022</span>
+                        <span class="month">-</span>
+                        <span class="year">2021</span>
+                      </span>
+                      <h2>Master I - Spécialité Systèmes Embarqués<br><span class="sous-titre-timeline">CYCLE INGÉNIEUR GÉNÉRALISTE - ANNÉE 2</span></h2>
+                      <p>
+                        <span class="images-master-timeline">
+                            <a href="https://isen-brest.fr/"><img src="img/isen.jpg" class="isen-img-master"></a>
+                            <a href="https://www.hw.ac.uk/"><img src="img/HW.png" class="hw-img-master"></a>
+                        </span>
+
+                        <b>Semestre 2 : Heriot Watt University, Écosse<br></b>
+                        Échange en université étrangère dans le domaine "Electrical and Embedded Systems"
+                        <br><br>
+                        <b>Semestre 1 : ISEN Brest<br></b>
+                        Échange en université étrangère en Écosse dans le domaine "Electrical and Embedded Systems"
+                      </p>
+                    </div>
+                  </article>
+                  <article>
+                    <div class="inner">
+                      <span class="date">
+                        <span class="day">2021</span>
+                        <span class="month">-</span>
+                        <span class="year">2020</span>
+                      </span>
+                      <h2>CYCLE INGÉNIEUR GÉNÉRALISTE<br><span class="sous-titre-timeline">ANNÉE 1</span></h2>   
+                      <p>
+
+                        <span class="solo-image-timeline">
+                            <a href="https://isen-brest.fr/" ><img src="img/isen.jpg" class="solo-isen"></a>
+                        </span>
+
+                        <b>Projets :<br></b>
+                        - Conception d'un cardiofréquencemètre sur carte STM8<br>
+                        - Conception d'un oxymètre de pouls/électrocardiographe sur carte BeagleBone (sous Linux Embarqué)
+                      </p>
+                    </div>
+                  </article>
+                  <article>
+                    <div class="inner">
+                      <span class="date">
+                        <span class="day">2020</span>
+                        <span class="month">-</span>
+                        <span class="year">2018</span>
+                      </span>
+                      <h2>CLASSES PRÉPARATOIRES<br><span class="sous-titre-timeline">Filière Biologie, Sciences et Technologies</span></h2>  
+                      <p>
+                        <span class="solo-image-timeline">
+                            <a href="https://isen-brest.fr/"><img src="img/isen.jpg" class="solo-isen"></a>
+                        </span>
+                        <b>Projets :<br></b>
+                        - Application de tracking des transports en commun (bus) de Brest et Rennes en temps réel par exploitation d'APIs<br>
+                        </p>
+                    </div>
+                  </article>
+                  <article>
+                    <div class="inner">
+                      <span class="date">
+                        <span class="day">2018</span>
+                        <span class="month">-</span>
+                        <span class="year">2015</span>
+                      </span>
+                      <h2>Baccalauréat Général Scientifique</h2>
+                      <p>
+                      <b>Sainte-Anne Brest<br><br></b>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+                    </div>
+                  </article>
+                </section>
+            </div> <!-- Fin Timeline -->
+
+            <div> <!-- Début Compétences -->
+                <span class="section-title-timeline"><h2 style="margin: 100px auto 30px auto; width: 15%; border-top: 2px solid white; border-bottom: 2px solid white; padding: 10px 0 10px 0">COMPÉTENCES</h2></span>
+
+                <div style="display: flex; width: 100%"><!-- Début div Compétences-->
+
+                    <div class="it" style="width:65%; background: #fff; border-radius: 6px; margin:auto; padding-bottom: 40px;"><!-- Début IT -->
+
+                      <div class="title" style="width:100%; justify-content: flex-start; border-radius: 6px 6px 0 0; background: #9b59b6; text-align: center; color: white; font-size: 20px; text-transform: uppercase; padding: 15px 0; font-weight: bold;">INFORMATIQUE</div>
+
+                      <div style="width: 100%; display: flex; border-radius: 0 0 6px 6px;"><!-- Début Div Haut -->
+
+                        <div class="langage" style="width: 150px; margin: auto; display: flex; flex-direction: column;"><!-- Début L -->
+                            <div style="width: 100%; text-align: center;"><h4 style="color: #9b59b6;">- LANGUAGE -</h4></div>
+                            <div style="width: 100%; display: flex; justify-content: space-between;">
+                                <img src="img/coding/c.png" style="width:60px; height: 60px"><img src="img/coding/python.png" style="width:60px; height: 60px;">
+                            </div>
+                            <div style="width: 100%; display: flex; padding-top: 10px;">
+                                <img src="img/coding/java.png" style="width:110px; margin: auto;">
+                            </div>
+                        </div><!-- Fin L -->
+
+                        <div class="integrated" style="width: 250px; margin: auto;  display: flex; flex-direction: column;"><!-- Début Inté -->
+                          <div style="width: 100%; text-align: center;"><h4 style="color: #9b59b6;">- INTÉGRATION -</h4></div>
+                          <div style="width: 100%; display: flex; justify-content: space-between;">
+                            <img src="img/coding/fpga.png" style="height: 45px; margin: auto 0"><img src="img/coding/beaglebone.png" style="width: 75px; margin: auto 0">
+                          </div>
+                          <div style="width: 100%; display: flex; padding-top: 10px; justify-content: space-between;">
+                            <img src="img/coding/STMicroelectronics.png" style="width: 85px; margin: auto 0;"><img src="img/coding/freertos.png" style="width:120px; margin: auto 0;">
+                          </div>
+                        </div><!-- Fin Inté -->
+
+                        <div class="os" style="width: 220px ; margin: auto;  display: flex; flex-direction: column;">
+                          <div style="width: 100%; text-align: center;"><h4 style="color: #9b59b6;">- OS -</h4></div>
+                          <div style="width: 100%; display: flex; justify-content: space-between;">
+                            <img src="img/coding/ubuntu.png" style="width:70px;"><img src="img/coding/bash.png" style="width:125px; height: 50px;margin: auto 0">
+                          </div>
+                          <div style="width: 100%; display: flex; padding-top: 10px;">
+                            <img src="img/coding/linux_embedde.png" style="width:130px; margin: auto;">
+                          </div><!-- Début OS -->
+                        </div> <!-- Fin OS -->
+                      </div><!-- Fin div haut -->
 
 
+                      <div style="width: 100%; display: flex; border-radius: 0 0 6px 6px; padding-top: 40px;"> <!-- Début div bas -->
+
+                      <div class="langage" style="width: 200px; margin: auto; display: flex; flex-direction: column;">
+                        <div style="width: 100%; text-align: center;"><h4 style="color: #9b59b6;">- WEB -</h4></div>
+
+                        <div style="width: 100%; display: flex; justify-content: space-between;">
+                          <img src="img/coding/html.png" style="height: 70px; margin: auto 5px"><img src="img/coding/css.png" style="height:70px; margin: auto 25px;">
+                        </div>
+
+                        <div style="width: 100%; display: flex; padding-top: 20px; justify-content: space-between;">
+                          <img src="img/coding/javascript.png" style="width:60px; margin: auto 0;"><img src="img/coding/php.png" style="width:100px; margin: auto 0;">
+                        </div>
+                      </div> <!-- Fin WEB -->
+
+
+                      <div class="os" style="width: 300px ; margin: auto;  display: flex; flex-direction: column;">
+                        <div style="width: 100%; text-align: center;"><h4 style="color: #9b59b6;">- AUTRES -</h4></div>
+
+                        <div style="width: 100%; display: flex; justify-content: space-between;">
+                          <img src="img/coding/mysql.png" style="width:110px; margin: auto"><img src="img/coding/MATLAB.png" style="width:150px; margin: auto;">
+                        </div>
+
+                        <div style="width: 100%; display: flex;">
+                          <img src="img/coding/cisco.png" style="width:130px; margin: auto;">
+                        </div>
+                      </div> <!-- Fin Autres -->
+                      </div> <!-- Fin div bas -->
+                    </div> <!-- Fin IT -->
+
+                    <div class="langues" style="width:20%; background: #fff; border-radius: 6px; margin:auto; padding-bottom: 40px; text-align: center;">
+
+                    <div class="title" style="width:100%; justify-content: flex-start; border-radius: 6px 6px 0 0; background: #e74c3c; text-align: center; color: white; font-size: 20px; text-transform: uppercase; padding: 15px 0; font-weight: bold;">LANGUES</div>
+
+                    <div style="width: 100%; text-align: center;">
+                        <h4 style="color: #e74c3c;">- ANGLAIS -</h4>
+                        <div style="width: 100%; display: flex; justify-content: space-between; flex-direction: column;">
+                            <img src="img/lang/TOEIC.png" style="width: 120px; margin: auto;">
+                            <span style="padding-top: 20px">TOEIC IBT - Niveau B2<br>Score : 880 <br>
+                        </div>
+                    </div><!-- Fin EN -->
+
+                    <div style="width: 100%; text-align: center;">
+                        <h4 style="color: #e74c3c;">- FRANCAIS -</h4>
+                        <div style="width: 100%; display: flex; justify-content: space-between; flex-direction: column;">
+                          <img src="img/lang/Voltaire.png" style="width:60px; height: 60px; margin: auto;">
+                           <span style="padding-top: 20px">Certificat Voltaire - Niveau Affaires<br>Score : 883<br><a href="https://mon.certificat-voltaire.fr/verification-certificat?code=E9LLCC" style="color: black; border-bottom: 1px solid red; padding-bottom: 0px; text-transform: none;">Lien de vérification</a></span>
+                        </div>
+                    </div> <!-- Fin FR -->
+                    </div> <!-- Fin Langues -->
+                </div> <!-- Fin Div Compétences -->
+            </div> <!-- Fin Compétences -->
 
             <div class="cv">
                 <div style="width:808px; display: inline-flex; height: 565px;">
@@ -40,7 +227,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+            </div> <!-- Fin class cv -->
+
+        </div> <!-- Blurred -->
+    </div> <!-- Parllax -->
 </body>

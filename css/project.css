@@ -21,6 +21,7 @@
   background-color: #031625;
   width: 75%;
   margin: auto;
+  z-index: -1;
 }
 
 #timeline:hover .tl-item {
