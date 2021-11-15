@@ -5,157 +5,177 @@
 	<title>Portfolio POT Martin</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/project.css">
+  <link rel="stylesheet" href="css/nav.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="js/index.js"></script>
+	<script src="js/project.js"></script>
 </head>
 
-<body>
+<!-- <body>
 	En phase de développement...
-	<!--
-<section id="timeline">
- 
-  <div class="tl-item">
-    
-    <div class="tl-bg" style="background-image: url(img/book.jpg)"></div>
-    
-    <div class="tl-title">
-      <p class="f2 heading--sanSerif">CV</p>
-    </div>
-
-    <div class="tl-content">
-      <h1>Mon Curriculum Vitae</h1>
-      <p>Cliquez pour le découvrir</p>
-    </div>
-
-  </div>
-
-  <div class="tl-item">
-    
-    <div class="tl-bg" style="background-image: url(img/electrical.jpg)"></div>
-    
-    <div class="tl-title">
-      <p class="f2 heading--sanSerif">Projets</p>
-    </div>
-
-    <div class="tl-content">
-      <h1>Mes différents projets</h1>
-      <p>Cliquez pour en savoir plus</p>
-    </div>
-
-  </div> -->
-
-</section>
-
-
-
-
-
-<!-- <section id="timeline">
-  <article>
-    <div class="inner">
-      <span class="date">
-        <span class="day">30<sup>th</sup></span>
-        <span class="month">Jan</span>
-        <span class="title">2014</span>
-      </span>
-      <h2>The Title</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
-    </div>
-  </article>
-  <article>
-    <div class="inner">
-      <span class="date">
-        <span class="day">26<sup>th</sup></span>
-        <span class="month">Jan</span>
-        <span class="title">2014</span>
-      </span>
-      <h2>The Title</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
-    </div>
-  </article>
-  <article>
-    <div class="inner">
-      <span class="date">
-        <span class="day">26<sup>th</sup></span>
-        <span class="month">Jan</span>
-        <span class="title">2014</span>
-      </span>
-      <h2>The Title</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
-    </div>
-  </article>
-  <article>
-    <div class="inner">
-      <span class="date">
-        <span class="day">26<sup>th</sup></span>
-        <span class="month">Jan</span>
-        <span class="title">2014</span>
-      </span>
-      <h2>The Title</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
-    </div>
-  </article>
-  <article>
-    <div class="inner">
-      <span class="date">
-        <span class="day">26<sup>th</sup></span>
-        <span class="month">Jan</span>
-        <span class="title">2014</span>
-      </span>
-      <h2>The Title</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
-    </div>
-  </article>
-</section>
- -->
-
-
-
-
-	<!-- <div class="container">
-    <h1 class="project-name">RESPONSIVE TIMELINE</h1>
-		<div id="timeline">
-			<div class="timeline-item">
-				<div class="timeline-icon">
-					
-				</div>
-				<div class="timeline-content right">
-					<h2>LOREM IPSUM DOLOR</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-						Atque, facilis quo maiores magnam modi ab libero praesentium blanditiis.
-					</p>
-					<a href="#" class="btn">button</a>
-				</div>
-			</div>
-
-			<div class="timeline-item">
-				<div class="timeline-icon">
-					
-
-				</div>
-				<div class="timeline-content right">
-					<h2>LOREM IPSUM DOLOR</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
-					</p>
-					<a href="#" class="btn">button</a>
-				</div>
-			</div>
-
-			<div class="timeline-item">
-				<div class="timeline-icon">
-
-
-				</div>
-				<div class="timeline-content right">
-					<h2>LOREM IPSUM DOLOR</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
-					</p>
-					<a href="#" class="btn">button</a>
-				</div>
-			</div>
-		</div>
-	</div>
 </body> -->
+
+<body>
+  <div class="parallax">
+    <div class="blurred">
+      <nav role="navigation">
+        <div id="menuToggle">
+          <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+          <input type="checkbox" />
+          
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a href="index.html"><li>Accueil</li></a>
+            <a href="#about"><li>À propos de moi</li></a>
+            <a href="cv.html"><li>CV</li></a>
+            <a href="project.html"><li>Projets</li></a>
+            <a href="#contact"><li>Contact</li></a>
+            <a href="#"><li><button>FR / EN</button></li></a>
+          </ul>
+        </div>
+      </nav>
+
+      <span class="titlepage"><h2>MES PROJETS</h2></span>
+    <div id="small" class="allProjectsSmall">
+        <div class="projetsRow">
+          <div id="oxymetreSmall" class="smallInfo"> 
+            <div class="title">
+              <h2>OXYMÈTRE DE POULS</h2>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+              </svg>
+            </div>
+            
+            <div class="infos">
+              <img src="img/projects/ecg.png">
+              <div class="domain">
+                <div class="titleDomain">
+                  <h3>DOMAINES :</h3>
+                  <span>- Language C<br> - Python
+                    <br>- Carte BeagleBone<br>- Linux embarqué<br> - Traitement du signal</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="trackingSmall" class="smallInfo"> 
+            <div class="title">
+              <h2>TRACKING DE TRANSPORTS EN COMMUN</h2>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+              </svg>
+            </div>
+            
+            <div class="infos">
+              <img src="img/projects/BIBUS.png">
+              <div class="domain" style="height: 160px;">
+                <div class="titleDomain">
+                  <h3>DOMAINES :</h3>
+                  <span>- Python<br>- Exploitation d'API
+                    <br>- Informations en temps réel<br>- Réseaux de Brest & Rennes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="projetsRow">
+          <div id="ecgSmall" class="smallInfo"> 
+            <div class="title">
+              <h2>ÉLECTROCARDIOGRAMME</h2>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+              </svg>
+            </div>
+            
+            <div class="infos">
+              <img src="img/projects/oxymetre.jpg">
+              <div class="domain" style="height: 160px;">
+                <div class="titleDomain">
+                  <h3>DOMAINES :</h3>
+                  <span>- Language C<br> - Électronique analogique/numérique
+                    <br>- Carte STM8
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="ecologySmall" class="smallInfo"> 
+            <div class="title">
+              <h2>SITE WEB DE COMPARAISON D'IMPACTS ÉCOLOGIQUES</h2>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+              </svg>
+            </div>
+            
+            <div class="infos">
+              <img src="img/projects/ecologie.jpg">
+              <div class="domain" style="height: 160px;">
+                <div class="titleDomain">
+                  <h3>DOMAINES :</h3>
+                  <span>- Language C<br>- Électronique analogique/numérique
+                    <br>- Carte STM8
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div> <!-- All Projects-->
+
+    <!-- <div class="allProjectsBig">
+      <div class="projetsRow">
+        <div id="oxymetreBig"  class="bigInfos">
+          <div class="title">
+            <h2>OXYMÈTRE DE POULS</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/>
+            </svg>
+          </div>
+
+          <div class="infos">
+            <img src="img/projects/oxymetre.jpg">
+            <div class="bigDomain">
+              <div class="titleDomain">
+                <h3>DOMAINES :</h3>
+                <div style="display: flex;">
+                  <div style="width: 240px ;">
+                    <span>- Language C<br> - Python
+                       <br>- Traitement du signal</span>
+                    </span>
+                  </div>
+                  
+                  <div style="width: 240px ;">
+                    <span>- Carte BeagleBone<br>- Linux embarqué<br>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="desc">
+            <h4 style="color: #333;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium sapien nec ligula mattis, eget rhoncus odio ultricies. Nulla odio magna, sollicitudin vel metus et, pharetra sagittis arcu. Integer pretium vulputate dui sollicitudin vehicula. Integer dapibus lacinia mi, in placerat magna sagittis ut. Nullam consectetur ligula a pellentesque faucibus. Sed euismod risus vitae lectus elementum ullamcorper. Duis porta sollicitudin sapien, quis dictum dolor suscipit eget. Sed porttitor ante sit amet dolor hendrerit, vitae suscipit nisi accumsan. Etiam vestibulum vestibulum commodo. Etiam enim magna, bibendum eu augue at, ultrices mattis quam. Etiam non nulla sit amet augue pharetra pulvinar. Donec a sapien lorem. Maecenas auctor erat sit amet enim viverra consectetur. Morbi faucibus tincidunt facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</h4>
+          </div>
+
+        </div>
+
+        <div class="bigInfos">
+          ff
+        </div>
+      </div>
+    </div> -->
+    
+    </div> <!-- Blurred -->
+  </div> <!-- Parallax -->
+</body>
