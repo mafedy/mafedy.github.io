@@ -70,6 +70,20 @@ html, body{
   -ms-transform:  scale(1.02);
   -webkit-transform:  scale(1.02);
   box-shadow: 0 0 5rem rgba(0, 0, 0, .5);
+
+  cursor: pointer;
+}
+
+.smallInfo svg{
+  transition:  transform 0.5s ease;
+  -webkit-transition:  transform 0.5s ease;
+  -moz-transition:  transform 0.5s ease;
+  -ms-transition:  transform 0.5s ease;
+}
+
+.smallInfo:hover svg:hover{
+  color: rgb(14, 165, 0);
+  transform: rotate(90deg);
 }
 
 
@@ -116,7 +130,7 @@ html, body{
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  margin-top: 20px;  
+  margin-top: 20px;
 }
 
 .bigInfos .title{
@@ -147,6 +161,18 @@ html, body{
   width:100%; height: 100%; padding-left: 20px; padding-right: 20px;
 }
 
+.bigInfos svg{
+  transition:  transform 0.5s ease;
+  -webkit-transition:  transform 0.5s ease;
+  -moz-transition:  transform 0.5s ease;
+  -ms-transition:  transform 0.5s ease;
+}
+
+.bigInfos svg:hover{
+  color: rgb(197, 4, 4);
+  transform: rotate(90deg);
+}
+
 .bigInfos .infos .bigDomain span{
   line-height: 22px;
   
@@ -156,4 +182,25 @@ html, body{
   background-color: thistle;
   margin: 0 20px 20px 20px;
   text-align: justify;
+}
+
+
+#oxymetreBig{
+  display: none;
+}
+
+#trackingBig{
+  display: none;
+}
+
+#ecgBig{
+  display: none;
+}
+
+#ecologyBig{
+  display: none;
+}
+
+#small{
+  display: flex;
 }
