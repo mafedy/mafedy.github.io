@@ -7,11 +7,19 @@
 .section-title-timeline h2{
     width: 15%; 
     margin: auto;
-  
 
     border-top: 2px solid white;
     border-bottom: 2px solid white;
     padding: 10px 0 10px 0;
+}
+
+.section-title-timeline h4{
+  width: 15%; 
+  margin: auto;
+
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  padding: 10px 0 10px 0;
 }
 
 .sous-titre-timeline{
